@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       const stringJSON=`{
+ "list": [
+  {
+   "name": "Petr",
+   "age": "20",
+   "prof": "mechanic"
+  },
+  {
+   "name": "Vova",
+   "age": "60",
+   "prof": "pilot"
+  }
+ ]
+}`;
+
+const obj=JSON.parse(stringJSON);
+let result={'list':[]}
+console.log(stringJSON);
+console.log(obj);
+
+for(var i=0;i<obj.length;i++){
+    result.list.push(  {
+            'name':0,
+            'prof':0,
+            'age':0
+          
+        });
+        result.list[i].name=obj.list[i].name;
+        result.list[i].prof=obj.list[i].prof;
+        result.list[i].age=obj.list[i].age;
+
+}
+    </script>
+</body>
+</html>
