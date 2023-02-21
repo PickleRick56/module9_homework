@@ -9,7 +9,7 @@ button.addEventListener("click", () => {
     return ;
   }
   fetch(`https://picsum.photos/${val1}/${val2}`).then((response) => {
-    console.log(response);
+   
     document.querySelector("img").src = response.url;
   });
 });
