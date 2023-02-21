@@ -2,7 +2,7 @@ const button = document.querySelector("button");
 button.addEventListener("click", function () {
   const val = document.querySelector("input").value;
 
-  if (val < 1 || val > 10 || val === isNaN) {
+  if (val < 1 || val > 10) {
     console.log("число вне диапазона от 1 до 10");
   } else {
     const xhr = new XMLHttpRequest();
